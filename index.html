@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteSpace — Learn, Create &amp; Grow</title>
+  <meta name="description" content="Get access to hundreds of courses. Unlock your creativity, gain valuable knowledge, and grow your business with ByteSpace.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reusable icons: defined once, used with <svg><use href="#id"/></svg> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-logo" viewBox="0 0 29.5 31"><path fill="currentColor" fill-rule="evenodd" d="M0 0c5 .5 10.5 4 10.5 9.5V10H19a10.5 10.5 0 0 1 0 21h-9A10 10 0 0 1 0 21V0Zm11 15v11l7.5-5.5L11 15Z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8Zm4 0V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 6 6"/></g></symbol>
+    <symbol id="i-star" viewBox="0 0 20 20"><path fill="currentColor" d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></symbol>
+    <symbol id="i-level" viewBox="0 0 16 16"><path fill="currentColor" d="M2 10h2.5v4H2zM6.75 6h2.5v8h-2.5zM11.5 2H14v12h-2.5z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="currentColor"/><path d="M5.5 10.2l3 3 6-6.2" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <!-- ================= HERO (with header) ================= -->
+  <section class="hero grid-bg">
+    <img class="shape shape--1" src="images/shapes/spring-b-lime.png" alt="">
+    <img class="shape shape--2" src="images/shapes/spring-a-white.png" alt="">
+    <img class="shape shape--3" src="images/shapes/ring-white.png" alt="">
+    <img class="shape shape--4" src="images/shapes/cylinder-lime.png" alt="">
+    <img class="shape shape--5" src="images/shapes/pyramid-white.png" alt="">
+    <img class="shape shape--6" src="images/shapes/spring-a-white.png" alt="">
+
+    <header class="header" id="header">
+      <nav class="container nav" aria-label="Main">
+        <a href="index.html" class="logo" aria-label="ByteSpace home">
+          <svg class="logo__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+          <span class="logo__text">ByteSpace</span>
+        </a>
+
+        <ul class="nav__links">
+          <li><a href="#" class="is-active" aria-current="page">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#creator">Creators</a></li>
+        </ul>
+
+        <div class="nav__end">
+          <div class="nav__actions">
+            <a href="#">Sign In</a>
+            <a href="#">Join Us</a>
+          </div>
+          <a href="#" class="nav__cart" aria-label="Cart"><svg aria-hidden="true"><use href="#i-bag"/></svg></a>
+          <button type="button" class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+            <svg class="icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+          </button>
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#creator">Creators</a></li>
+        </ul>
+        <div class="mobile-menu__actions">
+          <a href="#" class="btn btn--brand">Sign In</a>
+          <a href="#" class="btn btn--lime">Join Us</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container hero__content">
+      <h1 class="hero__title">Get Access to Hundreds<br> Courses Available</h1>
+      <p class="hero__text">Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.</p>
+
+      <form class="search" action="#courses" role="search">
+        <div class="search__field">
+          <label for="hero-search" class="sr-only">Search courses</label>
+          <svg aria-hidden="true"><use href="#i-search"/></svg>
+          <input id="hero-search" type="search" placeholder="Course, topic, creator">
+        </div>
+        <button type="submit" class="btn btn--lime">Search</button>
+      </form>
+    </div>
+
+    <div class="hero__stage">
+      <div class="hero__circle"></div>
+      <img class="hero__boy" src="images/hero-boy.png" alt="Smiling student with headphones holding a laptop" width="516" height="483">
+
+      <div class="info-card hero__card-course">
+        <p class="info-card__title">UI/UX Design</p>
+        <p class="info-card__meta">200 Courses &nbsp;•&nbsp; 1000+ Students</p>
+      </div>
+      <div class="info-card progress-card hero__card-progress">
+            <p class="progress-card__title">Learning Progress</p>
+            <p class="progress-card__value">55%</p>
+            <div class="progress"><div class="progress__bar"></div></div>
+          </div>
+      <div class="info-card students-card hero__card-students">
+            <p class="info-card__title">Happy Students</p>
+            <p class="info-card__meta"><strong>4.5</strong> (240) <svg class="star" aria-hidden="true"><use href="#i-star"/></svg></p>
+            <div class="avatars avatars--lg"><img src="images/avatars/avatar-2.jpg" alt=""><img src="images/avatars/avatar-7.jpg" alt=""><img src="images/avatars/avatar-5.jpg" alt=""><img src="images/avatars/avatar-6.jpg" alt=""><img src="images/avatars/avatar-8.jpg" alt=""><img src="images/avatars/avatar-4.jpg" alt=""><img src="images/avatars/avatar-3.jpg" alt=""><span class="avatars__more">2K+</span></div>
+          </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- ================= LOGO STRIP ================= -->
+    <section class="brands" aria-label="Trusted by">
+      <div class="container">
+        <div class="brands__list">
+          <img src="images/logos/logo-1.png" alt="Logoipsum">
+          <img src="images/logos/logo-2.png" alt="Logoipsum">
+          <img src="images/logos/logo-3.png" alt="Logoipsum">
+          <img src="images/logos/logo-4.png" alt="Logoipsum">
+          <img src="images/logos/logo-5.png" alt="Logoipsum">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= COURSES ================= -->
+    <section class="courses" id="courses">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="heading">Discover Your Passion,<br> Build Your Skills</h2>
+          <p class="intro">At Bytespace Courses, we bring you closer to life-changing knowledge. Explore a variety of courses across different fields, from technology to the arts, and make a difference in your career and life.</p>
+        </div>
+
+        <div class="chips" aria-label="Course categories">
+          <div class="chips__row">
+            <button type="button" class="chip is-active" aria-pressed="true">Featured</button>
+            <button type="button" class="chip" aria-pressed="false">Music</button>
+            <button type="button" class="chip" aria-pressed="false">Drawing &amp; Painting</button>
+            <button type="button" class="chip" aria-pressed="false">Marketing</button>
+            <button type="button" class="chip" aria-pressed="false">Animation</button>
+            <button type="button" class="chip" aria-pressed="false">Social Media</button>
+            <button type="button" class="chip" aria-pressed="false">UI/UX Design</button>
+            <button type="button" class="chip" aria-pressed="false">Creative Marketing</button>
+          </div>
+          <div class="chips__row">
+            <button type="button" class="chip" aria-pressed="false">Digital Illustration</button>
+            <button type="button" class="chip" aria-pressed="false">Film &amp; Video</button>
+            <button type="button" class="chip" aria-pressed="false">Crafts</button>
+            <button type="button" class="chip" aria-pressed="false">Freelance &amp; Entrepreneurship</button>
+            <button type="button" class="chip" aria-pressed="false">Graphic Design</button>
+            <button type="button" class="chip" aria-pressed="false">Photography</button>
+          </div>
+          <div class="chips__row">
+            <button type="button" class="chip" aria-pressed="false">Productivity</button>
+            <button type="button" class="chip" aria-pressed="false">Web Development</button>
+            <button type="button" class="chip" aria-pressed="false">Data Science</button>
+            <button type="button" class="chip" aria-pressed="false">Cooking</button>
+            <button type="button" class="chip chip--more">+ More</button>
+          </div>
+        </div>
+
+        <div class="course-grid">
+          <article class="course-card">
+            <div class="course-card__media">
+              <img src="images/courses/course-1.jpg" alt="" width="341" height="195" loading="lazy">
+              <div class="course-card__tags"><span>17 Lessons</span><span>2 hours 16 mins</span><span>59 Comments</span></div>
+            </div>
+            <div class="course-card__head">
+              <h3 class="course-card__title"><a href="#">Learn Figma from Basic</a></h3>
+              <span class="rating" aria-label="Rated 4.5 out of 5">4.5 <svg class="star" aria-hidden="true"><use href="#i-star"/></svg></span>
+            </div>
+            <p class="course-card__by">by <a href="#">purepearl studio</a></p>
+            <div class="course-card__row">
+              <span class="level"><svg aria-hidden="true"><use href="#i-level"/></svg>Beginner</span>
+              <div class="avatars" aria-label="26+ students enrolled">
+                <img src="images/avatars/avatar-7.jpg" alt=""><img src="images/avatars/avatar-2.jpg" alt=""><img src="images/avatars/avatar-1.jpg" alt=""><img src="images/avatars/avatar-5.jpg" alt=""><span class="avatars__more">26+</span>
+              </div>
+            </div>
+            <p class="price"><strong>$25</strong>/lifetime</p>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card__media">
+              <img src="images/courses/course-2.jpg" alt="" width="341" height="195" loading="lazy">
+              <div class="course-card__tags"><span>17 Lessons</span><span>2 hours 16 mins</span><span>59 Comments</span></div>
+            </div>
+            <div class="course-card__head">
+              <h3 class="course-card__title"><a href="#">Build Digital Asset</a></h3>
+              <span class="rating" aria-label="Rated 4.5 out of 5">4.5 <svg class="star" aria-hidden="true"><use href="#i-star"/></svg></span>
+            </div>
+            <p class="course-card__by">by <a href="#">purepearl studio</a></p>
+            <div class="course-card__row">
+              <span class="level"><svg aria-hidden="true"><use href="#i-level"/></svg>Beginner</span>
+              <div class="avatars" aria-label="26+ students enrolled">
+                <img src="images/avatars/avatar-7.jpg" alt=""><img src="images/avatars/avatar-2.jpg" alt=""><img src="images/avatars/avatar-1.jpg" alt=""><img src="images/avatars/avatar-5.jpg" alt=""><span class="avatars__more">26+</span>
+              </div>
+            </div>
+            <p class="price"><strong>$25</strong>/lifetime</p>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card__media">
+              <img src="images/courses/course-3.jpg" alt="" width="341" height="195" loading="lazy">
+              <div class="course-card__tags"><span>17 Lessons</span><span>2 hours 16 mins</span><span>59 Comments</span></div>
+            </div>
+            <div class="course-card__head">
+              <h3 class="course-card__title"><a href="#">the Power of Big Data</a></h3>
+              <span class="rating" aria-label="Rated 4.5 out of 5">4.5 <svg class="star" aria-hidden="true"><use href="#i-star"/></svg></span>
+            </div>
+            <p class="course-card__by">by <a href="#">purepearl studio</a></p>
+            <div class="course-card__row">
+              <span class="level"><svg aria-hidden="true"><use href="#i-level"/></svg>Beginner</span>
+              <div class="avatars" aria-label="26+ students enrolled">
+                <img src="images/avatars/avatar-7.jpg" alt=""><img src="images/avatars/avatar-2.jpg" alt=""><img src="images/avatars/avatar-1.jpg" alt=""><img src="images/avatars/avatar-5.jpg" alt=""><span class="avatars__more">26+</span>
+              </div>
+            </div>
+            <p class="price"><strong>$25</strong>/lifetime</p>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card__media">
+              <img src="images/courses/course-4.jpg" alt="" width="341" height="195" loading="lazy">
+              <div class="course-card__tags"><span>17 Lessons</span><span>2 hours 16 mins</span><span>59 Comments</span></div>
+            </div>
+            <div class="course-card__head">
+              <h3 class="course-card__title"><a href="#">Balancing Productivity and Wellbeing</a></h3>
+              <span class="rating" aria-label="Rated 4.5 out of 5">4.5 <svg class="star" aria-hidden="true"><use href="#i-star"/></svg></span>
+            </div>
+            <p class="course-card__by">by <a href="#">purepearl studio</a></p>
+            <div class="course-card__row">
+              <span class="level"><svg aria-hidden="true"><use href="#i-level"/></svg>Beginner</span>
+              <div class="avatars" aria-label="26+ students enrolled">
+                <img src="images/avatars/avatar-7.jpg" alt=""><img src="images/avatars/avatar-2.jpg" alt=""><img src="images/avatars/avatar-1.jpg" alt=""><img src="images/avatars/avatar-5.jpg" alt=""><span class="avatars__more">26+</span>
+              </div>
+            </div>
+            <p class="price"><strong>$25</strong>/lifetime</p>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card__media">
+              <img src="images/courses/course-5.jpg" alt="" width="341" height="195" loading="lazy">
+              <div class="course-card__tags"><span>17 Lessons</span><span>2 hours 16 mins</span><span>59 Comments</span></div>
+            </div>
+            <div class="course-card__head">
+              <h3 class="course-card__title"><a href="#">Mastering Money Management</a></h3>
+              <span class="rating" aria-label="Rated 4.5 out of 5">4.5 <svg class="star" aria-hidden="true"><use href="#i-star"/></svg></span>
+            </div>
+            <p class="course-card__by">by <a href="#">purepearl studio</a></p>
+            <div class="course-card__row">
+              <span class="level"><svg aria-hidden="true"><use href="#i-level"/></svg>Beginner</span>
+              <div class="avatars" aria-label="26+ students enrolled">
+                <img src="images/avatars/avatar-7.jpg" alt=""><img src="images/avatars/avatar-2.jpg" alt=""><img src="images/avatars/avatar-1.jpg" alt=""><img src="images/avatars/avatar-5.jpg" alt=""><span class="avatars__more">26+</span>
+              </div>
+            </div>
+            <p class="price"><strong>$25</strong>/lifetime</p>
+          </article>
+
+          <article class="course-card">
+            <div class="course-card__media">
+              <img src="images/courses/course-6.jpg" alt="" width="341" height="195" loading="lazy">
+              <div class="course-card__tags"><span>17 Lessons</span><span>2 hours 16 mins</span><span>59 Comments</span></div>
+            </div>
+            <div class="course-card__head">
+              <h3 class="course-card__title"><a href="#">From Idea to Startup Success</a></h3>
+              <span class="rating" aria-label="Rated 4.5 out of 5">4.5 <svg class="star" aria-hidden="true"><use href="#i-star"/></svg></span>
+            </div>
+            <p class="course-card__by">by <a href="#">purepearl studio</a></p>
+            <div class="course-card__row">
+              <span class="level"><svg aria-hidden="true"><use href="#i-level"/></svg>Beginner</span>
+              <div class="avatars" aria-label="26+ students enrolled">
+                <img src="images/avatars/avatar-7.jpg" alt=""><img src="images/avatars/avatar-2.jpg" alt=""><img src="images/avatars/avatar-1.jpg" alt=""><img src="images/avatars/avatar-5.jpg" alt=""><span class="avatars__more">26+</span>
+              </div>
+            </div>
+            <p class="price"><strong>$25</strong>/lifetime</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LEARNING PATHS ================= -->
+    <section class="paths">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="heading heading--md">Explore Diverse Learning Paths at Bytespace</h2>
+          <p class="intro">At Bytespace, we believe in empowering individuals through knowledge. Our diverse range of courses spans various fields, ensuring there's something for everyone. Unleash your potential and explore our carefully curated categories.</p>
+        </div>
+
+        <div class="path-grid">
+          <a href="#courses" class="path-card">
+            <span class="path-card__icon"><img src="images/icons/path-1.png" alt=""></span>
+            Design
+          </a>
+          <a href="#courses" class="path-card">
+            <span class="path-card__icon"><img src="images/icons/path-2.png" alt=""></span>
+            Development
+          </a>
+          <a href="#courses" class="path-card">
+            <span class="path-card__icon"><img src="images/icons/path-3.png" alt=""></span>
+            IT &amp; Software
+          </a>
+          <a href="#courses" class="path-card">
+            <span class="path-card__icon"><img src="images/icons/path-4.png" alt=""></span>
+            Business
+          </a>
+          <a href="#courses" class="path-card">
+            <span class="path-card__icon"><img src="images/icons/path-5.png" alt=""></span>
+            Marketing
+          </a>
+          <a href="#courses" class="path-card">
+            <span class="path-card__icon"><img src="images/icons/path-6.png" alt=""></span>
+            Photography
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="features">
+      <!-- ================= PROFESSIONAL GROWTH ================= -->
+      <section class="growth">
+        <div class="container split">
+          <div>
+            <h2 class="heading">Your Path to Professional Growth Starts Here!</h2>
+            <p class="intro">Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.</p>
+            <dl class="stats">
+              <div><dt>Students</dt><dd>12K</dd></div>
+              <div><dt>Courses</dt><dd>70+</dd></div>
+              <div><dt>Creators</dt><dd>16</dd></div>
+            </dl>
+          </div>
+
+          <div class="growth__visual" aria-hidden="true">
+            <article class="course-card">
+              <div class="course-card__media">
+                <img src="images/courses/course-1.jpg" alt="" width="341" height="195" loading="lazy">
+                <div class="course-card__tags"><span>17 Lessons</span><span>2 hours 16 mins</span><span>59 Comments</span></div>
+              </div>
+              <div class="course-card__head">
+                <h3 class="course-card__title"><a href="#">Learn Figma from Basic</a></h3>
+                <span class="rating" aria-label="Rated 4.5 out of 5">4.5 <svg class="star" aria-hidden="true"><use href="#i-star"/></svg></span>
+              </div>
+              <p class="course-card__by">by <a href="#">purepearl studio</a></p>
+              <div class="course-card__row">
+                <span class="level"><svg aria-hidden="true"><use href="#i-level"/></svg>Beginner</span>
+                <div class="avatars" aria-label="26+ students enrolled">
+                  <img src="images/avatars/avatar-7.jpg" alt=""><img src="images/avatars/avatar-2.jpg" alt=""><img src="images/avatars/avatar-1.jpg" alt=""><img src="images/avatars/avatar-5.jpg" alt=""><span class="avatars__more">26+</span>
+                </div>
+              </div>
+              <p class="price"><strong>$25</strong>/lifetime</p>
+            </article>
+            <img class="growth__boy" src="images/hero-boy.png" alt="">
+            <div class="info-card progress-card ">
+            <p class="progress-card__title">Learning Progress</p>
+            <p class="progress-card__value">55%</p>
+            <div class="progress"><div class="progress__bar"></div></div>
+          </div>
+            <img class="shape" src="images/shapes/spring-a-lime.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CREATE & MANAGE ================= -->
+      <section class="create">
+        <div class="container split">
+          <div class="create__visual" aria-hidden="true">
+            <div class="money-card money-card--revenue">
+              <p class="money-card__title">Total Revenue</p>
+              <p class="money-card__date">July 1-28</p>
+              <p class="money-card__value">$120.29</p>
+              <div class="progress"><div class="progress__bar"></div></div>
+            </div>
+            <div class="money-card money-card--ytd">
+              <p class="money-card__title">Year to Date</p>
+              <p class="money-card__date">2023</p>
+              <p class="money-card__value">$1,200.38</p>
+              <span class="money-card__badge">+12$</span>
+            </div>
+            <img class="create__girl" src="images/creator-girl.png" alt="">
+            <img class="shape" src="images/shapes/spring-b-lime.png" alt="">
+            <div class="info-card students-card ">
+            <p class="info-card__title">Happy Students</p>
+            <p class="info-card__meta"><strong>4.5</strong> (240) <svg class="star" aria-hidden="true"><use href="#i-star"/></svg></p>
+            <div class="avatars avatars--lg"><img src="images/avatars/avatar-2.jpg" alt=""><img src="images/avatars/avatar-7.jpg" alt=""><img src="images/avatars/avatar-5.jpg" alt=""><img src="images/avatars/avatar-6.jpg" alt=""><img src="images/avatars/avatar-8.jpg" alt=""><img src="images/avatars/avatar-4.jpg" alt=""><img src="images/avatars/avatar-3.jpg" alt=""><span class="avatars__more">2K+</span></div>
+          </div>
+          </div>
+
+          <div>
+            <h2 class="heading">Create &amp; Manage<br> Courses Easily.</h2>
+            <p class="intro"><strong>ByteSpace</strong> supports individuals or entities in the creation, publication, and administration of educational courses.</p>
+            <ul class="checklist">
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Share Your Expertise</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Monetize Your Passion</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Flexibility and Autonomy</li>
+              <li><svg aria-hidden="true"><use href="#i-check"/></svg>Build a Community</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= CREATOR CTA ================= -->
+    <section class="cta grid-bg" id="creator">
+      <img class="shape shape--1" src="images/shapes/spring-b-lime.png" alt="">
+      <img class="shape shape--2" src="images/shapes/spring-a-white.png" alt="">
+      <img class="shape shape--3" src="images/shapes/cone-white.png" alt="">
+      <img class="shape shape--4" src="images/shapes/ring-lime.png" alt="">
+      <img class="shape shape--5" src="images/shapes/pyramid-lime.png" alt="">
+      <img class="shape shape--6" src="images/shapes/cylinder-white.png" alt="">
+      <img class="shape shape--7" src="images/shapes/spring-a-lime.png" alt="">
+
+      <div class="container">
+        <h2 class="heading heading--light">Unlock Your Potential as a<br> Creator with ByteSpace</h2>
+        <p class="cta__text">Experience the collaboration of numerous creators and an expanding selection of courses. Register now and become a part of a community comprising over 10,000 local and international creators. Utilize our Course Editor, and showcase your expertise by publishing your finest course on the ByteSpace Course Library.</p>
+        <a href="#" class="btn btn--lime">Join as Creator</a>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials__head">
+          <h2 class="heading">Discover What Our<br> Community Is Saying</h2>
+          <p class="intro">At ByteSpace, our vibrant community of learners and creators is at the heart of what we do. Hear directly from those who have experienced the transformative journey of learning and creating on our platform. Explore testimonials that reflect the diverse perspectives of enthusiastic learners and accomplished creators.</p>
+        </div>
+
+        <div class="review-grid">
+          <figure class="review">
+            <img class="review__avatar" src="images/avatars/avatar-1.jpg" alt="Sarah M.">
+            <figcaption>
+              <p class="review__name">Sarah M.</p>
+              <p class="review__role">Enthusiastic Learner</p>
+            </figcaption>
+            <blockquote>"ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning."</blockquote>
+          </figure>
+
+          <figure class="review">
+            <img class="review__avatar" src="images/avatars/avatar-james.png" alt="James L.">
+            <figcaption>
+              <p class="review__name">James L.</p>
+              <p class="review__role">Lifelong Learner</p>
+            </figcaption>
+            <blockquote>"I've tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development."</blockquote>
+          </figure>
+
+          <figure class="review">
+            <img class="review__avatar" src="images/avatars/avatar-alex.png" alt="Alex B.">
+            <figcaption>
+              <p class="review__name">Alex B.</p>
+              <p class="review__role">Inspired Creator</p>
+            </figcaption>
+            <blockquote>"As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It's fulfilling to see my courses making a positive impact on learners globally."</blockquote>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__top">
+      <div>
+        <a href="index.html" class="logo logo--dark footer__logo" aria-label="ByteSpace home">
+          <svg class="logo__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+          <span class="logo__text">ByteSpace</span>
+        </a>
+        <p class="footer__text">Stay Up to date with our latest features and releases by joining our newsletter.</p>
+        <form class="newsletter" id="newsletter-form">
+          <label for="newsletter" class="sr-only">Email address</label>
+          <input id="newsletter" type="email" required placeholder="Enter your email">
+          <button type="submit" class="btn btn--lime">Search</button>
+        </form>
+        <p class="newsletter__msg" id="newsletter-msg" role="status"></p>
+        <p class="footer__note">By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer">
+        <ul>
+          <li><a href="#courses">Featured Courses</a></li>
+          <li><a href="#">Featured Categories</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">IT</a></li>
+          <li><a href="#">Design</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Development</a></li>
+          <li><a href="#">Marketing</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Finance</a></li>
+          <li><a href="#">Sport</a></li>
+        </ul>
+        <ul>
+          <li><a href="#creator">Become a Creator</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="footer__bottom">
+        <p>@ 2023 ByteSpace. All rights reserved.</p>
+        <ul class="footer__legal">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookies Settings</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
