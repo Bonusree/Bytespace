@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us — ByteSpace</title>
+  <meta name="description" content="Create a free ByteSpace account and start learning today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+  <!-- Reusable icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-logo" viewBox="0 0 29.5 31"><path fill="currentColor" fill-rule="evenodd" d="M0 0c5 .5 10.5 4 10.5 9.5V10H19a10.5 10.5 0 0 1 0 21h-9A10 10 0 0 1 0 21V0Zm11 15v11l7.5-5.5L11 15Z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 20 20"><path fill="currentColor" d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></symbol>
+    <symbol id="i-google" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.5 12.3c0-.8-.1-1.5-.2-2.2H12v4.2h5.9a5 5 0 0 1-2.2 3.3v2.7h3.5c2-1.9 3.3-4.7 3.3-8Z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.2-2.7l-3.5-2.7c-1 .7-2.2 1-3.7 1-2.9 0-5.3-1.9-6.2-4.5H2.2v2.8A11 11 0 0 0 12 23Z"/><path fill="#FBBC05" d="M5.8 14.1a6.6 6.6 0 0 1 0-4.2V7.1H2.2a11 11 0 0 0 0 9.8l3.6-2.8Z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3 .6 4.2 1.6l3.1-3.1A11 11 0 0 0 2.2 7.1l3.6 2.8C6.7 7.3 9.1 5.4 12 5.4Z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="#1877F2" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12Z"/></symbol>
+  </svg>
+
+  <div class="auth">
+    <!-- Brand panel (desktop) -->
+    <aside class="auth__side grid-bg" aria-hidden="true">
+      <img class="shape shape--1" src="images/shapes/cylinder-lime.png" alt="">
+      <img class="shape shape--2" src="images/shapes/spring-a-white.png" alt="">
+      <img class="shape shape--3" src="images/shapes/pyramid-white.png" alt="">
+
+      <a href="index.html" class="logo" tabindex="-1">
+        <svg class="logo__mark"><use href="#i-logo"/></svg>
+        <span class="logo__text">ByteSpace</span>
+      </a>
+      <p class="auth__side-title">Learn, create and grow with <span>ByteSpace</span></p>
+      <p class="auth__side-text">Join thousands of learners and creators. Access hundreds of courses from expert instructors.</p>
+
+      <div class="auth__visual">
+        <div class="auth__circle"></div>
+        <img class="auth__person" src="images/hero-boy.png" alt="">
+        <div class="info-card progress-card">
+          <p class="progress-card__title">Learning Progress</p>
+          <p class="progress-card__value">55%</p>
+          <div class="progress"><div class="progress__bar"></div></div>
+        </div>
+        <div class="info-card students-card">
+          <p class="info-card__title">Happy Students</p>
+          <p class="info-card__meta"><strong>4.5</strong> (240) <svg class="star"><use href="#i-star"/></svg></p>
+          <div class="avatars avatars--lg">
+            <img src="images/avatars/avatar-2.jpg" alt=""><img src="images/avatars/avatar-7.jpg" alt=""><img src="images/avatars/avatar-5.jpg" alt=""><img src="images/avatars/avatar-6.jpg" alt=""><img src="images/avatars/avatar-8.jpg" alt=""><span class="avatars__more">2K+</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Form -->
+    <main class="auth__main">
+      <div class="auth__card">
+        <a href="index.html" class="logo logo--dark auth__mobile-logo" aria-label="ByteSpace home">
+          <svg class="logo__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+          <span class="logo__text">ByteSpace</span>
+        </a>
+
+        <h1 class="auth__title">Create an account</h1>
+        <p class="auth__subtitle">Join ByteSpace for free and start learning today.</p>
+
+        <form class="form" novalidate data-success="Account created! (Demo only — no backend is connected.)">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <div class="field__control">
+              <input id="name" name="name" type="text" placeholder="John Doe" autocomplete="name" required minlength="2" aria-describedby="name-error">
+            </div>
+            <p class="field__error" id="name-error"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <div class="field__control">
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="email-error">
+            </div>
+            <p class="field__error" id="email-error"></p>
+          </div>
+          <div class="field field--password">
+            <label for="password">Password</label>
+            <div class="field__control">
+              <input id="password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" required minlength="8" aria-describedby="password-error">
+              <button type="button" class="field__toggle" aria-controls="password" aria-label="Show password">Show</button>
+            </div>
+            <p class="field__error" id="password-error"></p>
+          </div>
+          <div class="field field--password">
+            <label for="confirm">Confirm Password</label>
+            <div class="field__control">
+              <input id="confirm" name="confirm" type="password" placeholder="Re-enter your password" autocomplete="new-password" required data-match="password" aria-describedby="confirm-error">
+              <button type="button" class="field__toggle" aria-controls="confirm" aria-label="Show password">Show</button>
+            </div>
+            <p class="field__error" id="confirm-error"></p>
+          </div>
+          <div class="field">
+            <label class="check"><input type="checkbox" name="terms" id="terms" required aria-describedby="terms-error"> <span>I agree to the <a href="#" class="link">Terms of Service</a> and <a href="#" class="link">Privacy Policy</a></span></label>
+            <p class="field__error" id="terms-error"></p>
+          </div>
+          <button type="submit" class="btn btn--lime">Create Account</button>
+          <p class="form__status" role="status"></p>
+          <div class="divider">or continue with</div>
+          <div class="socials">
+            <button type="button" class="btn btn--social"><svg aria-hidden="true"><use href="#i-google"/></svg>Google</button>
+            <button type="button" class="btn btn--social"><svg aria-hidden="true"><use href="#i-facebook"/></svg>Facebook</button>
+          </div>
+        </form>
+
+        <p class="auth__switch">Already have an account? <a href="login.html" class="link">Sign In</a></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
